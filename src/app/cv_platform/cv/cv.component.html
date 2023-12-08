@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-6 col-sm-3">
+      <app-list-cv (selectedPersonne)="selectPersonne($event)"  [personnes] ="personnes"></app-list-cv>
+    </div>
+    <div class="col-md-6 col-sm-9">
+      <app-detail-cv *ngIf="SelectedPesonne" [personne]="SelectedPesonne" ></app-detail-cv>
+    </div>
+
+    <div style="padding-top: 50px;">
+      <h2>CV Embauché</h2>
+      <app-cv-embauche></app-cv-embauche>
+    </div>
+  
+  </div>

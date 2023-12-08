@@ -1,12 +1,32 @@
-<div class="alert alert-danger">
-  cc RT4
-  <div class="alert alert-warning">
-    <app-somme [x]="5"></app-somme>
-    <app-somme [y]="5"></app-somme>
-    <app-somme [x]="5" [y]="10"></app-somme>
-  </div>
-  <app-two></app-two>
-  <app-first />
-  <app-first></app-first>
-  <app-second></app-second>
-</div>
+<!-- <div class="alert alert-danger"> -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cv" routerLinkActive="active" >CV Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/couleur" routerLinkActive="active" >Couleur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </header>
+
+      <div>
+        cc RT4
+        <router-outlet></router-outlet>
+      </div>
